@@ -291,13 +291,17 @@ public:
 
 // Main function with a simple command terminal interface.
 int main() {
-    int numFloors = 3;
-    int spotsPerFloor = 10;
-    
+
+    cout << "Enter the number of floors: ";
+    int numFloors;
+    cin>>numFloors;
+    cout << "Enter the number of spots per floor: ";
+    int spotsPerFloor;
+    cin>>spotsPerFloor;   
     // Create ParkingLot on the stack (it manages Floor pointers internally)
     ParkingLot parkingLot(numFloors, spotsPerFloor);
 
-    cout << "Parking Lot System (Pointer-Based Version)" << endl;
+    cout << "Parking Lot System" << endl;
     cout << "Commands:" << endl;
     cout << "  park_vehicle <license_plate> <vehicle_type>" << endl;
     cout << "  remove_vehicle <license_plate>" << endl;
