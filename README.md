@@ -43,7 +43,7 @@ space requirements.
                     │-license │
                     └─────────┘
 ```
-## Key Pointer Changes:
+## Key Points:
 1. Floors are stored as `Floor*` in a `vector<Floor*>`.
 2. ParkingSpots are stored as `ParkingSpot*` in a `vector<ParkingSpot*>` within each Floor.
 3. Vehicles are dynamically allocated (`new Vehicle(...)`) in `main` and tracked in a map to be properly deleted on removal.
